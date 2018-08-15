@@ -1,0 +1,47 @@
+﻿Build started 2018/8/15 10:18:44.
+     1>Project "C:\Users\sunjize\Documents\Git mGitHub\HairRender\HairResearch\OGLES2HairResearch\OGLES2HairResearch\OGLES2HairResearch.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\Shell /I..\..\Shell\API\KEGL /I..\..\Shell\OS\Windows /I..\..\Include /I..\..\Tools\OGLES2 /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D BUILD_OGLES2 /D _CRT_SECURE_NO_WARNINGS /D _MBCS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\Shell\API\KEGL\PVRShellAPI.cpp ..\..\Shell\OS\Windows\PVRShellOS.cpp ..\..\Shell\PVRShell.cpp Content\Ball.cpp Content\BlinnPhongFragShader.cpp Content\BlinnPhongVertShader.cpp Content\DefaultFragShader.cpp Content\DefaultVertShader.cpp Content\HairModel.cpp Content\Hair_diff_whiteTex.cpp Content\Hair_flow_t2Tex.cpp Content\Hair_nmTex.cpp Content\HeadModel.cpp Content\Head_diffTex.cpp
+         Head_diffTex.cpp
+         HeadModel.cpp
+         Hair_nmTex.cpp
+         Hair_flow_t2Tex.cpp
+         Hair_diff_whiteTex.cpp
+         HairModel.cpp
+         DefaultVertShader.cpp
+         DefaultFragShader.cpp
+         BlinnPhongVertShader.cpp
+         BlinnPhongFragShader.cpp
+         Ball.cpp
+         PVRShell.cpp
+         PVRShellOS.cpp
+         PVRShellAPI.cpp
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Shell /I..\..\Shell /I..\..\Shell\API\KEGL /I..\..\Shell\OS\Windows /I..\..\Include /I..\..\Tools\OGLES2 /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D BUILD_OGLES2 /D _CRT_SECURE_NO_WARNINGS /D _MBCS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt OGLES2HairResearch.cpp
+         OGLES2HairResearch.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /l"0x0409" /nologo /fo"Debug\shared.res" ..\..\Resources\shared.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\sunjize\Documents\Git mGitHub\HairRender\HairResearch\OGLES2HairResearch\Debug\OGLES2HairResearch.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\..\Lib /LIBPATH:..\..\Tools\OGLES2\Build\WindowsVC2010\Debug\ libEGL.lib libGLESv2.lib OGLES2Tools.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\sunjize\Documents\Git mGitHub\HairRender\HairResearch\OGLES2HairResearch\Debug\OGLES2HairResearch.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\sunjize\Documents\Git mGitHub\HairRender\HairResearch\OGLES2HairResearch\Debug\OGLES2HairResearch.lib" /MACHINE:X86 Debug\shared.res
+         Debug\PVRShellAPI.obj
+         Debug\PVRShellOS.obj
+         Debug\PVRShell.obj
+         Debug\Ball.obj
+         Debug\BlinnPhongFragShader.obj
+         Debug\BlinnPhongVertShader.obj
+         Debug\DefaultFragShader.obj
+         Debug\DefaultVertShader.obj
+         Debug\HairModel.obj
+         Debug\Hair_diff_whiteTex.obj
+         Debug\Hair_flow_t2Tex.obj
+         Debug\Hair_nmTex.obj
+         Debug\HeadModel.obj
+         Debug\Head_diffTex.obj
+         Debug\OGLES2HairResearch.obj
+     1>LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+         OGLES2HairResearch.vcxproj -> C:\Users\sunjize\Documents\Git mGitHub\HairRender\HairResearch\OGLES2HairResearch\Debug\OGLES2HairResearch.exe
+     1>Done Building Project "C:\Users\sunjize\Documents\Git mGitHub\HairRender\HairResearch\OGLES2HairResearch\OGLES2HairResearch\OGLES2HairResearch.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.33

@@ -1,0 +1,70 @@
+﻿Build started 2018/8/15 10:18:27.
+     1>Project "C:\Users\sunjize\Documents\Git mGitHub\HairRender\HairResearch\Tools\OGLES2\Build\WindowsVC2010\OGLES2Tools.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\.. /I..\..\.. /I..\..\..\..\Include /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D BUILD_OGLES2 /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\PVRTUnicode.cpp ..\..\PVRTBackground.cpp ..\..\..\PVRTDecompress.cpp ..\..\..\PVRTError.cpp ..\..\..\PVRTFixedPoint.cpp ..\..\PVRTgles2Ext.cpp ..\..\..\PVRTMatrixF.cpp ..\..\..\PVRTMatrixX.cpp ..\..\..\PVRTMisc.cpp ..\..\..\PVRTModelPOD.cpp ..\..\..\PVRTPFXParser.cpp ..\..\PVRTPFXParserAPI.cpp ..\..\..\PVRTPrint3D.cpp ..\..\PVRTPFXSemantics.cpp ..\..\PVRTPrint3DAPI.cpp ..\..\..\PVRTQuaternionF.cpp ..\..\..\PVRTQuaternionX.cpp ..\..\..\PVRTResourceFile.cpp ..\..\PVRTShader.cpp ..\..\..\PVRTShadowVol.cpp ..\..\..\PVRTString.cpp ..\..\..\PVRTStringHash.cpp ..\..\..\PVRTTexture.cpp ..\..\PVRTTextureAPI.cpp ..\..\..\PVRTTrans.cpp ..\..\..\PVRTTriStrip.cpp ..\..\..\PVRTVector.cpp ..\..\..\PVRTVertex.cpp
+         PVRTVertex.cpp
+         PVRTVector.cpp
+         PVRTTriStrip.cpp
+         PVRTTrans.cpp
+         PVRTTextureAPI.cpp
+         PVRTTexture.cpp
+         PVRTStringHash.cpp
+         PVRTString.cpp
+         PVRTShadowVol.cpp
+         PVRTShader.cpp
+         PVRTResourceFile.cpp
+         PVRTQuaternionX.cpp
+         PVRTQuaternionF.cpp
+         PVRTPrint3DAPI.cpp
+         PVRTPFXSemantics.cpp
+         PVRTPrint3D.cpp
+         PVRTPFXParserAPI.cpp
+         PVRTPFXParser.cpp
+         PVRTModelPOD.cpp
+         PVRTMisc.cpp
+         Generating Code...
+         Compiling...
+         PVRTMatrixX.cpp
+         PVRTMatrixF.cpp
+         PVRTgles2Ext.cpp
+         PVRTFixedPoint.cpp
+         PVRTError.cpp
+         PVRTDecompress.cpp
+         PVRTBackground.cpp
+         PVRTUnicode.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\sunjize\Documents\Git mGitHub\HairRender\HairResearch\Tools\OGLES2\Build\WindowsVC2010\Debug\OGLES2Tools.lib" /NOLOGO Debug\PVRTUnicode.obj
+         Debug\PVRTBackground.obj
+         Debug\PVRTDecompress.obj
+         Debug\PVRTError.obj
+         Debug\PVRTFixedPoint.obj
+         Debug\PVRTgles2Ext.obj
+         Debug\PVRTMatrixF.obj
+         Debug\PVRTMatrixX.obj
+         Debug\PVRTMisc.obj
+         Debug\PVRTModelPOD.obj
+         Debug\PVRTPFXParser.obj
+         Debug\PVRTPFXParserAPI.obj
+         Debug\PVRTPrint3D.obj
+         Debug\PVRTPFXSemantics.obj
+         Debug\PVRTPrint3DAPI.obj
+         Debug\PVRTQuaternionF.obj
+         Debug\PVRTQuaternionX.obj
+         Debug\PVRTResourceFile.obj
+         Debug\PVRTShader.obj
+         Debug\PVRTShadowVol.obj
+         Debug\PVRTString.obj
+         Debug\PVRTStringHash.obj
+         Debug\PVRTTexture.obj
+         Debug\PVRTTextureAPI.obj
+         Debug\PVRTTrans.obj
+         Debug\PVRTTriStrip.obj
+         Debug\PVRTVector.obj
+         Debug\PVRTVertex.obj
+         OGLES2Tools.vcxproj -> C:\Users\sunjize\Documents\Git mGitHub\HairRender\HairResearch\Tools\OGLES2\Build\WindowsVC2010\Debug\OGLES2Tools.lib
+     1>Done Building Project "C:\Users\sunjize\Documents\Git mGitHub\HairRender\HairResearch\Tools\OGLES2\Build\WindowsVC2010\OGLES2Tools.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:17.49
