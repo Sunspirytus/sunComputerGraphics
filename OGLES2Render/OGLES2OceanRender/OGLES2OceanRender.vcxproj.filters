@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Content Files">
+      <UniqueIdentifier>{04da505b-cab8-461d-a0ef-ea2a660b7ee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content Files\Scene Files">
+      <UniqueIdentifier>{48042620-ff57-4a16-8606-5c4b2a582bcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content Files\Shaders">
+      <UniqueIdentifier>{4a9767db-4495-40fc-9762-161e726f869e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content Files\Textures">
+      <UniqueIdentifier>{3aaf68de-75db-40ad-9449-3d96ed309f37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SceneObj">
+      <UniqueIdentifier>{898db2b5-5690-48a3-ac5d-23aaed0e1481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shaders">
+      <UniqueIdentifier>{b43df53d-e3cf-45f5-b5ec-89d91b4cd1b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Textures">
+      <UniqueIdentifier>{429aed1d-5738-4e4c-bd5f-42f5a21ec140}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Resources\shared.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LargeWaves_H_Tex.pvr">
+      <Filter>Content Files\Textures</Filter>
+    </None>
+    <None Include="Resources\LargeWaves_N_Tex.pvr">
+      <Filter>Content Files\Textures</Filter>
+    </None>
+    <None Include="Resources\SeaFoam1_Tex.pvr">
+      <Filter>Content Files\Textures</Filter>
+    </None>
+    <None Include="Resources\Skybox1_Tex.pvr">
+      <Filter>Content Files\Textures</Filter>
+    </None>
+    <None Include="Resources\Skybox2_Tex.pvr">
+      <Filter>Content Files\Textures</Filter>
+    </None>
+    <None Include="Resources\SmallWaves_N_Tex.pvr">
+      <Filter>Content Files\Textures</Filter>
+    </None>
+    <None Include="Resources\Ball.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\cube_test.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\WaterPlane.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Shell\PVRShell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shell\PVRShellImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shell\OS\Windows\PVRShellOS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shell\API\KEGL\PVRShellAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Resources\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Content\LargeWaves_H_Tex.cpp">
+      <Filter>Source Files\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\LargeWaves_N_Tex.cpp">
+      <Filter>Source Files\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\SeaFoam1_Tex.cpp">
+      <Filter>Source Files\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Skybox1_Tex.cpp">
+      <Filter>Source Files\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Skybox2_Tex.cpp">
+      <Filter>Source Files\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\SmallWaves_N_Tex.cpp">
+      <Filter>Source Files\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Ball.cpp">
+      <Filter>Source Files\SceneObj</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\BlinnPhongFragShader.cpp">
+      <Filter>Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\BlinnPhongVertShader.cpp">
+      <Filter>Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\cube_test.cpp">
+      <Filter>Source Files\SceneObj</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\DefaultFragShader.cpp">
+      <Filter>Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\DefaultVertShader.cpp">
+      <Filter>Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\SkyboxFragShader.cpp">
+      <Filter>Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\SkyboxVertShader.cpp">
+      <Filter>Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\WaterPlane.cpp">
+      <Filter>Source Files\SceneObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Shell\PVRShell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Shell\API\KEGL\PVRShellAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Shell\OS\Windows\PVRShellOS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLES2OceanRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Resources\BlinnPhongFragShader.fsh">
+      <Filter>Content Files\Shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\BlinnPhongVertShader.vsh">
+      <Filter>Content Files\Shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\DefaultFragShader.fsh">
+      <Filter>Content Files\Shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\DefaultVertShader.vsh">
+      <Filter>Content Files\Shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\SkyboxFragShader.fsh">
+      <Filter>Content Files\Shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\SkyboxVertShader.vsh">
+      <Filter>Content Files\Shaders</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

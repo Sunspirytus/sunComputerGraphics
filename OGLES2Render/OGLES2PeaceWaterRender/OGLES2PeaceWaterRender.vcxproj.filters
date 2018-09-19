@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Content Files">
+      <UniqueIdentifier>{632a0ee3-56ba-4e01-96eb-cd1876c12cf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content Files\Scene Files">
+      <UniqueIdentifier>{4b30b565-5729-4107-b9a6-5aa091cf3a5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content Files\Shaders">
+      <UniqueIdentifier>{bb6c2e16-8154-4f4f-8db7-0034cf17a5df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content Files\Textures">
+      <UniqueIdentifier>{a4c565eb-d686-4ddc-b110-87e8d2ab546d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Models">
+      <UniqueIdentifier>{9159ce5e-84a2-4685-9c9c-2f60143a48f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shaders">
+      <UniqueIdentifier>{3b37ea52-de62-4612-b874-fc41445761c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Textures">
+      <UniqueIdentifier>{32dc21f2-d706-404f-a767-7aa2dec09fd7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ball.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\cube_test.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\Plane1x1.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\WaterPlane5x5.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\WaterPlane10x10.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\WaterPlane20x20.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\WaterPlane50x50.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\WaterPlane75x75.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\WaterPlane100x100.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\WaterPlane110x110.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\WaterPlane120x120.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\WaterPlane130x130.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\WaterPlane150x150.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\WaterPlane180x180.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\WaterPlane225x225.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\WaterPlane300x300.pod">
+      <Filter>Content Files\Scene Files</Filter>
+    </None>
+    <None Include="Resources\Skybox1_Tex.pvr">
+      <Filter>Content Files\Textures</Filter>
+    </None>
+    <None Include="Resources\Skybox2_Tex.pvr">
+      <Filter>Content Files\Textures</Filter>
+    </None>
+    <None Include="Resources\SmallWaves_N_Tex.pvr">
+      <Filter>Content Files\Textures</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Resources\shared.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Resources\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shell\PVRShell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shell\PVRShellImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shell\API\KEGL\PVRShellAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Shell\OS\Windows\PVRShellOS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mFunctionTools\Include\mCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mFunctionTools\Include\mModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mFunctionTools\Include\mSceneManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mFunctionTools\Include\mSuroundBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Shell\OS\Windows\PVRShellOS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Shell\API\KEGL\PVRShellAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Shell\PVRShell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Ball.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\cube_test.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Plane1x1.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\WaterPlane5x5.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\WaterPlane10x10.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\WaterPlane20x20.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\WaterPlane50x50.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\WaterPlane75x75.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\WaterPlane100x100.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\WaterPlane110x110.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\WaterPlane120x120.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\WaterPlane130x130.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\WaterPlane150x150.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\WaterPlane180x180.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\WaterPlane225x225.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\WaterPlane300x300.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Skybox1_Tex.cpp">
+      <Filter>Source Files\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Skybox2_Tex.cpp">
+      <Filter>Source Files\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\SmallWaves_N_Tex.cpp">
+      <Filter>Source Files\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\BlinnPhongFragShader.cpp">
+      <Filter>Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\BlinnPhongVertShader.cpp">
+      <Filter>Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\DefaultFragShader.cpp">
+      <Filter>Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\DefaultVertShader.cpp">
+      <Filter>Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\SkyboxFragShader.cpp">
+      <Filter>Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\SkyboxVertShader.cpp">
+      <Filter>Source Files\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLES2PeaceWaterRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mFunctionTools\Source\mCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mFunctionTools\Source\mModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mFunctionTools\Source\mSceneManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mFunctionTools\Source\mSuroundBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Resources\BlinnPhongFragShader.fsh">
+      <Filter>Content Files\Shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\BlinnPhongVertShader.vsh">
+      <Filter>Content Files\Shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\DefaultFragShader.fsh">
+      <Filter>Content Files\Shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\DefaultVertShader.vsh">
+      <Filter>Content Files\Shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\SkyboxFragShader.fsh">
+      <Filter>Content Files\Shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\SkyboxVertShader.vsh">
+      <Filter>Content Files\Shaders</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

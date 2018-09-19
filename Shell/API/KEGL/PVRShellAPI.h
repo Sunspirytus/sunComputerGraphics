@@ -12,6 +12,10 @@
 #ifndef __PVRSHELLAPI_H_
 #define __PVRSHELLAPI_H_
 
+#ifndef BUILD_OGLES2
+	#define BUILD_OGLES2
+#endif
+
 /****************************************************************************
 ** 3D API header files
 ****************************************************************************/

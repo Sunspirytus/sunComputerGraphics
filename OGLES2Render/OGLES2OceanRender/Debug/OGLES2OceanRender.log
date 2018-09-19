@@ -1,0 +1,8 @@
+﻿Build started 2018/9/19 12:00:55.
+     1>Project "C:\Users\sunjize\Documents\Git mGitHub\OGLES2Render\OGLES2OceanRender\OGLES2OceanRender.vcxproj" on node 2 (Clean target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppClean.targets(76,5): warning : The process cannot access the file 'c:\users\sunjize\documents\git mgithub\ogles2render\ogles2oceanrender\debug\largewaves_h_tex.obj' because it is being used by another process.
+     1>Done Building Project "C:\Users\sunjize\Documents\Git mGitHub\OGLES2Render\OGLES2OceanRender\OGLES2OceanRender.vcxproj" (Clean target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.06

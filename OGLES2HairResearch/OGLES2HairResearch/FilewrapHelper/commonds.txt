@@ -1,4 +1,0 @@
-Filewrap.exe -s -o ..\\Content\\BlinnPhongFragShader.cpp ..\\Resources\BlinnPhongFragShader.fsh
-Filewrap.exe -s -o ..\\Content\\BlinnPhongVertShader.cpp ..\\Resources\BlinnPhongVertShader.vsh
-Filewrap.exe -s -o ..\\Content\\DefaultFragShader.cpp ..\\Resources\\DefaultFragShader.fsh
-Filewrap.exe -s -o ..\\Content\\DefaultVertShader.cpp ..\\Resources\\DefaultVertShader.vsh

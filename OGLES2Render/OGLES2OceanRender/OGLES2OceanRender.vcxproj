@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{768472C0-7B0B-4287-9DEB-DC7606838DA9}</ProjectGuid>
+    <RootNamespace>OGLES2OceanRender</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\Shell;..\..\Shell\API\KEGL;..\..\Shell\OS\Windows;..\..\Include;..\..\Tools\OGLES2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\Lib;..\..\Tools\OGLES2\Build\WindowsVC2010\$(IntDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libEGL.lib;libGLESv2.lib;OGLES2Tools.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Resources\shared.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ball.pod" />
+    <CustomBuild Include="Resources\BlinnPhongFragShader.fsh">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(ProjectDir)\Resources\Filewrap.exe" -s -o "$(ProjectDir)\Content\BlinnPhongFragShader.cpp" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Wrapping shader \Resources\BlinnPhongFragShader.fsh as \Content\BlinnPhongFragShader.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)\Content\BlinnPhongFragShader.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="Resources\BlinnPhongVertShader.vsh">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(ProjectDir)\Resources\Filewrap.exe" -s -o "$(ProjectDir)\Content\BlinnPhongVertShader.cpp" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Wrapping shader \Resources\BlinnPhongVertShader.vsh as \Content\BlinnPhongVertShader.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)\Content\BlinnPhongVertShader.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="Resources\cube_test.pod" />
+    <CustomBuild Include="Resources\DefaultFragShader.fsh">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(ProjectDir)\Resources\Filewrap.exe" -s -o "$(ProjectDir)\Content\DefaultFragShader.cpp" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Wrapping shader \Resources\DefaultFragShader.fsh as \Content\DefaultFragShader.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)\Content\DefaultFragShader.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="Resources\DefaultVertShader.vsh">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(ProjectDir)\Resources\Filewrap.exe" -s -o "$(ProjectDir)\Content\DefaultVertShader.cpp" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Wrapping shader \Resources\DefaultVertShader.vsh as \Content\DefaultVertShader.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)\Content\DefaultVertShader.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="Resources\LargeWaves_H_Tex.pvr" />
+    <None Include="Resources\LargeWaves_N_Tex.pvr" />
+    <None Include="Resources\SeaFoam1_Tex.pvr" />
+    <None Include="Resources\Skybox1_Tex.pvr" />
+    <None Include="Resources\Skybox2_Tex.pvr" />
+    <CustomBuild Include="Resources\SkyboxFragShader.fsh">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(ProjectDir)\Resources\Filewrap.exe" -s -o "$(ProjectDir)\Content\SkyboxFragShader.cpp" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Wrapping shader \Resources\SkyboxFragShader.fsh as \Content\SkyboxFragShader.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)\Content\SkyboxFragShader.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="Resources\SkyboxVertShader.vsh">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(ProjectDir)\Resources\Filewrap.exe" -s -o "$(ProjectDir)\Content\SkyboxVertShader.cpp" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Wrapping shader \Resources\SkyboxVertShader.vsh as \Content\SkyboxVertShader.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)\Content\SkyboxVertShader.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="Resources\SmallWaves_N_Tex.pvr" />
+    <None Include="Resources\WaterPlane.pod" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Resources\resource.h" />
+    <ClInclude Include="..\..\Shell\API\KEGL\PVRShellAPI.h" />
+    <ClInclude Include="..\..\Shell\OS\Windows\PVRShellOS.h" />
+    <ClInclude Include="..\..\Shell\PVRShell.h" />
+    <ClInclude Include="..\..\Shell\PVRShellImpl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Shell\API\KEGL\PVRShellAPI.cpp" />
+    <ClCompile Include="..\..\Shell\OS\Windows\PVRShellOS.cpp" />
+    <ClCompile Include="..\..\Shell\PVRShell.cpp" />
+    <ClCompile Include="Content\Ball.cpp" />
+    <ClCompile Include="Content\BlinnPhongFragShader.cpp" />
+    <ClCompile Include="Content\BlinnPhongVertShader.cpp" />
+    <ClCompile Include="Content\cube_test.cpp" />
+    <ClCompile Include="Content\DefaultFragShader.cpp" />
+    <ClCompile Include="Content\DefaultVertShader.cpp" />
+    <ClCompile Include="Content\LargeWaves_H_Tex.cpp" />
+    <ClCompile Include="Content\LargeWaves_N_Tex.cpp" />
+    <ClCompile Include="Content\SeaFoam1_Tex.cpp" />
+    <ClCompile Include="Content\Skybox1_Tex.cpp" />
+    <ClCompile Include="Content\Skybox2_Tex.cpp" />
+    <ClCompile Include="Content\SkyboxFragShader.cpp" />
+    <ClCompile Include="Content\SkyboxVertShader.cpp" />
+    <ClCompile Include="Content\SmallWaves_N_Tex.cpp" />
+    <ClCompile Include="Content\WaterPlane.cpp" />
+    <ClCompile Include="OGLES2OceanRender.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
